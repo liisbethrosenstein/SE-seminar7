@@ -1,0 +1,176 @@
+
+/* Whole page */
+body {
+    margin: 0;
+    background-color: #11153e;
+    font-family: Arial, sans-serif;
+    color: #0c0a0a;
+}
+
+.hero {
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("eliise.jpg");
+
+    background-size: cover;
+    background-position: center 80%;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    color: #F7F0DF;
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-family: Georgia, serif;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 15px;
+    font-style: italic;
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 30px;
+}
+
+
+.column {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+     height: fit-content;
+}
+
+
+.column h2 {
+    font-family: Georgia, serif;
+    color: #03061f;
+    font-size: 25px;
+    margin-top: 8px;
+}
+
+
+.column p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.sport-image {
+    width: 45%;
+    max-height: 160px;
+    object-fit: cover;
+    border: 4px solid #08081e;
+    border-radius: 8px;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+}
+
+
+.intro p {
+    flex: 1;
+}
+
+
+a {
+    color: #0c1875;
+    font-weight: bold;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #777;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #050a29;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #cccccc;
+}
+
+/* Weightlifting techniques */
+.tehnika {
+    margin-top: 20px;
+}
+
+.tehnika {
+    margin-bottom: 20px;
+}
+
+.tehnika h3 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: #0a0b2a;
+    margin-bottom: 8px;
+}
+
+.tehnika ul {
+    margin-top: 0;
+    padding-left: 25px;
+}
+
+.tehnika li {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+@media (max-width: 700px) {
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sport-image {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero-text h1 {
+        font-size: 42px;
+    }
+}

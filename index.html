@@ -1,55 +1,102 @@
+
 <!DOCTYPE html>
-<html lang="et>
+<html lang="et">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pealeht</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Klassikaline tõstmine</h1>
-    <p>Veebileht tutvustab klassikalist tõstmist, mis on Eestis väljasurev spordiala.Tegemist on individuaalse spordiga, kus võistetalkse kahes tõsteviisis, rebimine ja tõukamine.</p>
-    <p></p>
-    <a href="https://tosteliit.ee" target="_blank">Rohkem infot Eestis toimuvast</a> 
-    <img src="mart.jpg" alt="Italian Trulli">
-    <h2>Tõstmise tehnikad</h2>
-
-<ul>
-    <li>Rebimine
-        <ul>
-            <li>Käed haaratakse laiali</li>
-            <li>Tõstetakse ühe liigutusega</li>
-        </ul>
-    </li>
-    <li>Tõukamine
-        <ol> 
-            <li>Esimene faas: rinnale</li>
-            <li>Teine faas: üles</li>
-        </ol>
-    </li>
-</ul>
-    <h3>Tõstmise tulemused</h3>
-
-<table border="1">
     
-    <tr>
-        <th>Sportlane</th>
-        <th>Tõsteviis</th>
-        <th>Tulemus (kg)</th>
-    </tr>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Klassikaline tõstmine</h1>
+            <p>Rebi rauda</p>
+        </div>
+    </section>
+
     
+    <main class="content">
 
-    <tr>
-        <td>Mart Seim</td>
-        <td>Rebimine</td>
-        <td>192</td>
-    </tr>
-</table>
- <p><a href="index2.html">Suurkujud</a></p>
+        <!-- vasak -->
+        <section class="column">
+
+            <h2>Klassikaline tõstmine</h2>
+
+            <div class="intro">
+
+                <img class="sport-image" src="mart.jpg"
+                    alt="Mart Seim tõstmas">
+
+                <p>
+                    Veebileht tutvustab klassikalist tõstmist, mis on Eestis
+                    hääbuv spordiala. Tegemist on individuaalse spordialaga,
+                    kus võisteldakse kahes tõsteviisis: rebimine ja tõukamine.
+                </p>
+
+            </div>
+
+            <h2>Tõstmise tulemused</h2>
+
+            <table>
+                <tr>
+                    <th>Sportlane</th>
+                    <th>Tõsteviis</th>
+                    <th>Tulemus (kg)</th>
+                </tr>
+
+                <tr>
+                    <td>Mart Seim</td>
+                    <td>Rebimine</td>
+                    <td>192</td>
+                </tr>
+            </table>
+
+        </section>
+
+        <!-- parem -->
+        <section class="column">
 
 
+            <h2>Tõstmise tehnika</h2>
+
+            <div class="tehnika">
+
+                <div class="tehnika">
+                    <h3>Rebimine</h3>
+
+                    <ul>
+                        <li>Käed haaratakse laiali</li>
+                        <li>Tõstetakse ühe liigutusega</li>
+                    </ul>
+                </div>
+
+                <div class="tehnika">
+                    <h3>Tõukamine</h3>
+
+                    <ul>
+                        <li>Esimene faas: rinnale</li>
+                        <li>Teine faas: üles</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <a href="https://tosteliit.ee" target="_blank">
+                Rohkem infot Eestis toimuvast
+            </a>
+
+            <p>
+                <a href="index2.html">Suurkujud</a>
+            </p>
+
+        </section>
+
+    </main>
 
 </body>
-
 </html>
